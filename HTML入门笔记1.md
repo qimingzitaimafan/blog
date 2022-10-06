@@ -9,7 +9,7 @@ DOCTYPE的意思是文档类型，这段代码目的在于让浏览器以最新�
 * h1~h6    标题
 * section  章节
 * article  文章
-* p 段落
+* p        段落
 * header 页面开头
 * footer 页面尾部
 * main     主要内容
@@ -23,7 +23,7 @@ class, contenteditable, hidden, id, style, tabindex, title
 * ul+li 无序列表
 * dl+dt+dd 描述列表（dt里写描述对象，dd里写描述内容）
 * pre (pre里的内容可以保留空格）
-* code （等宽代码，pre+code效果拔群）
+* code（等宽代码，pre+code效果拔群）
 * hr 水平分割线
 * br 换行
 * a 链接
