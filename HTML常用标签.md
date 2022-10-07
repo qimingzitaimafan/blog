@@ -33,6 +33,7 @@
 ### 事件
 * onload
 * onerror
+
 记录图片是否加载成功，代码如下
 ```javascript
 <script>
