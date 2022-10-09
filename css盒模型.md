@@ -11,3 +11,4 @@
 * 加border或者padding
 * 加overflow: hidden
 * 加display: flex
+#### （注意：只有上下margin会合并，左右不会）
