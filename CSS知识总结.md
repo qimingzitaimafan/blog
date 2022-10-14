@@ -10,6 +10,7 @@
 动画是由许多静止的画面(帧)，以一定的速度连续播放时，肉眼因视觉残像产生错觉，而误以为是活动的画面
 #### CSS动画的做法
 * transition
+
 transition: 属性名 时间 过渡方式 延迟
 常用过渡方式：linear/ease/ease-in/ease-out
 ```CSS
@@ -20,7 +21,7 @@ transition: transform .5s ease-out 1s
 ```CSS
 @keyframes xxx {
   0% {
-     transform: translate(0);
+    transform: translate(0);
   }
   50% {
     transform: translateX(100px);
@@ -30,7 +31,8 @@ transition: transform .5s ease-out 1s
   }
 }
 ```
-2. 添加animation:
+2. 添加animation
+
 （属性名 时长 过渡方式 延迟 次数 方向 填充模式）
 ```CSS
 animation: xxx .5s alternate 1s infinite;
