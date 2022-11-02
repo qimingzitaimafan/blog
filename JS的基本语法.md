@@ -58,4 +58,27 @@ for (初始化表达式; 条件; 递增表达式) {
 }
 ```
 ## break continue
+break语句和continue语句都具有跳转作用，可以让代码不按既有的顺序执行
+
+**break语句**用于跳出代码块或循环
+```JS
+for (var i = 0; i < 5; i++) {
+  console.log(i);
+  if (i === 3)
+    break;
+}
+```
+上面代码执行到i等于3，就会跳出循环
+
+**continue语句**用于立即终止本轮循环，返回循环结构的头部，开始下一轮循环
+```JS
+var i = 0;
+while (i < 100){
+  i++;
+  if (i % 2 === 0) continue;
+  console.log(i);
+}
+```
+上面代码只有在i为奇数时，才会输出i的值。如果i为偶数，则直接进入下一轮循环
+
 ## label
