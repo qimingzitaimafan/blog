@@ -37,5 +37,12 @@ JS 中每一个对象都有一个隐藏属性，这个隐藏属性储存着其�
 * `delete obj['xxx']`
 * `delete obj.xxx`
 #### 这里要注意区分“属性值为undefined”和“不含属性名”
-
+“不含属性名”是这这样的：
+```JS
+'xxx' in obj === false
+```
+“含有属性名，但是值为undefined”是这样的：
+```JS
+'xxx' in obj && obj.xxx === undefined
+```
 ## 判断属性是否属于对象的方法
