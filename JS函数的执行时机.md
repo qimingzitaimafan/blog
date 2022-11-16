@@ -39,7 +39,7 @@ for(i = 0; i<6; i++){
 
 ## 那么如何打印出0、1、2、3、4、5？
 **方法一**：let与for循环结合
-```
+```JS
 for(let i = 0; i<6; i++){
   setTimeout(()=>{
     console.log(i)
@@ -48,3 +48,10 @@ for(let i = 0; i<6; i++){
 ```
 **解释**：因为let变量的作用域只能在当前函数中，所以每次for循环生成的都是一个新的i,setTimeout里输出的i就是这个新的i，这个i是不会变化的，所以输出的就是正常的。
 
+**方法二**：
+```JS
+for(i=0;i<6;i++){
+  let j = i
+  setTimeout(()=>{console.log(j)},1000)
+}
+```
