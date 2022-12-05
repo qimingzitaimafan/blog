@@ -11,3 +11,7 @@ e.addEventLisenter('click',f2,true)   // true按捕获方向执行函数
 
 e.addEventLisenter('click',f2,false)  //  false按冒泡方向执行函数
 ![opps](https://upload-images.jianshu.io/upload_images/1181204-f84073bad90a1e3c.png?imageMogr2/auto-orient/strip|imageView2/2/format/webp)
+### 4、阻止冒泡
+e.stopPropagation()可以中断冒泡。这票干完就不通知后面的人了，狭义的说即挂在冒泡顺序里的监听函数不被执行。
+
+捕获无法取消，因为DOM是一颗树，根一定在的。只有顺着根不断发展
