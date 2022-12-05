@@ -6,6 +6,8 @@ DOM的结构是一个树形，每当HTML元素产生事件时，该事件就会�
 举例释义，图中[td]被点击，其上节点[tr]到[window]都可以加上onclick事件去执行函数。函数执行顺序分两种，从[window]到[tr]定义为捕获，从[tr]到[window]定义为冒泡。
 
 具体用哪种顺序，可以通过addEventListener的第三个参数控制
+
 e.addEventLisenter('click',f2,true)   // true按捕获方向执行函数
+
 e.addEventLisenter('click',f2,false)  //  false按冒泡方向执行函数
 ![opps](https://upload-images.jianshu.io/upload_images/1181204-f84073bad90a1e3c.png?imageMogr2/auto-orient/strip|imageView2/2/format/webp)
